@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header verde oscuro */
+header {
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sección de información con marco verde y fondo verde claro */
+.info {
+    border: 2px solid #32CD32; /* Marco verde */
+    background-color: #98FB98; /* Fondo verde claro */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Imágenes centradas */
+.centered-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de videos */
+.videos {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo de los títulos */
+h1, h2 {
+    color: #006400; /* Verde oscuro */
+}
