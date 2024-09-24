@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,12 +6,17 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header verde oscuro */
+/* Header verde oscuro con sombreado en el título */
 header {
     background-color: #006400; /* Verde oscuro */
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombreado negro */
+    color: white; /* Texto en blanco */
 }
 
 /* Sección de información con marco verde y fondo verde claro */
@@ -42,7 +48,42 @@ header {
     border-radius: 8px;
 }
 
-/* Estilo de los títulos */
-h1, h2 {
-    color: #006400; /* Verde oscuro */
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .info {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .centered-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Para pantallas grandes como computadoras */
+@media screen and (min-width: 769px) {
+    header {
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    .info {
+        max-width: 900px;
+    }
+
+    .video-container iframe {
+        width: 560px;
+        height: 315px;
+    }
 }
